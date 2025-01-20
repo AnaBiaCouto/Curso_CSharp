@@ -1,4 +1,6 @@
-﻿namespace Testetriangulo
+﻿using System.ComponentModel.Design;
+
+namespace Testetriangulo
 {
     internal class Program
     {
@@ -14,7 +16,20 @@
             Console.Write("Digite o valor do ladoC: ");
             ladoC = Convert.ToInt32(Console.ReadLine());
 
+            if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
+            {
+                Console.WriteLine("Os valores informados formam um triângulo.");
+            }           
+            else
+            {
+                Console.WriteLine("Os valores informados não formam um triângulo.");
+            }
+           
+                    
+
+
 
         }
+         
     }
 }
