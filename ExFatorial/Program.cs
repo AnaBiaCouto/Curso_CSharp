@@ -19,10 +19,6 @@
 
             Console.WriteLine(fatorial(num, mostrar)); 
 
-
-
-
-
         }
 
         static int fatorial (int n, bool show = false)
